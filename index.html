@@ -25,53 +25,185 @@
     />
     <!-- config cdn -->
     <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-              }
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
             },
-            fontFamily:{
-                jost: ['Jost', 'sans-serif'],
-            },
-            backgroundImage:{
-                headerBg:"url('./Assets/Rectangle 1.png')"
-            }
-          }
-        }
-      </script>
+          },
+          fontFamily: {
+            jost: ["Jost", "sans-serif"],
+          },
+          backgroundImage: {
+            headerBg: "url('./Assets/Rectangle 1.png')",
+          },
+        },
+      };
+    </script>
   </head>
   <body class="font-jost">
-    <header class="bg-headerBg h-[500px] bg-cover bg-no-repeat bg-center bg-gradient-to-b from-[#0000009d] to-[#0000007d]">
-        <div class="w-full h-full bg-gradient-to-b from-[#0000009d] to-[#0000007d]">
+    <header
+      class="bg-headerBg h-full lg:h-[500px] bg-cover bg-no-repeat bg-center bg-gradient-to-b from-[#0000009d] to-[#0000007d] pb-5 lg:pb-0"
+    >
+      <div
+        class="w-full h-full bg-gradient-to-b from-[#000000ac] to-[#00000097]"
+      >
         <!-- navbar -->
 
-        <nav>
-            <div>
-                <img src="./Assets/Frame 1171276204.png" alt="">
+        <div class="w-[90%] mx-auto py-4">
+          <div class="navbar">
+            <div class="navbar-start">
+              <img
+                class="w-24 lg:w-36"
+                src="./Assets/Frame 1171276204.png"
+                alt=""
+              />
             </div>
 
-            <div>
-                <ul>
-                    <li><a>Home</a></li>
-                    <li><a>Destination</a></li>
-                    <li><a>Experiences</a></li>
-                    <li><a>Hotels</a></li>
-                    <li><a>About Us</a></li>
-                    <li><a>Contact Us</a></li>
+            <div class="navbar-center hidden lg:flex">
+              <ul
+                class="bg-[#6b6b6bda] rounded-3xl menu menu-horizontal px-4 text-white text-sm font-[400]"
+              >
+                <li>
+                  <a class="pb-0">Home</a>
+                  <div
+                    class="border-b-4 border-[#43B97F] rounded-3xl p-0 w-3 mx-auto"
+                  ></div>
+                </li>
+                <li><a>Destinations</a></li>
+                <li><a>Experience</a></li>
+                <li><a>Hotels</a></li>
+                <li><a>About Us</a></li>
+                <li><a>Contact Us</a></li>
+              </ul>
+            </div>
+
+            <div class="navbar-end space-x-2">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5 text-white"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h8m-8 6h16"
+                    />
+                  </svg>
+                </div>
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow bg-[#6B6B6B] text-white right-0"
+                >
+                  <li><a>Home</a></li>
+                  <li><a>Destinations</a></li>
+                  <li><a>Experience</a></li>
+                  <li><a>Hotels</a></li>
+                  <li><a>About Us</a></li>
+                  <li><a>Contact Us</a></li>
                 </ul>
+              </div>
+              <button
+                class="hidden lg:flex btn bg-transparent border-[#43B97F] text-white h-8 min-h-0 rounded-sm font-[200]"
+              >
+                Log In
+              </button>
+              <button
+                class="hidden lg:flex btn bg-[#43B97F] border-[#43B97F] text-white h-8 min-h-0 rounded-sm font-[200]"
+              >
+                Sign Up
+              </button>
             </div>
-
-            <div>
-                <button></button>
-                <button></button>
-            </div>
-
-        </nav>
-
+          </div>
         </div>
 
+        <!-- banner -->
+
+        <div class="text-white pt-5 pb-10 lg:py-20 w-[90%] lg:w-3/5 mx-auto text-center flex flex-col items-center justify-center space-y-4">
+          <h1 class="text-3xl lg:text-5xl font-extrabold">
+            Discover your next great <br />
+            ADVENTURE
+          </h1>
+          <p class="text-sm w-[90%] lg:w-3/4">
+            From Majestic Mountains to Serene Beaches, Your Dream Destination
+            Awaits! Explore Vibrant Cities, Hidden Gems, and Exotic Landscapes.
+            Adventure is Calling!
+          </p>
+          <button
+                class="btn bg-[#43B97F] border-[#43B97F] text-white h-8 min-h-0 rounded-sm font-[200]"
+              >
+                Explore Now
+              </button>
+        </div>
+
+
+        <!-- extra part -->
+
+        <div class="bg-white w-[90%] lg:w-3/4 mx-auto grid grid-cols-2 lg:grid-cols-5 gap-5 lg:gap-0 items-center text-center justify-center p-5 rounded-xl">
+            <div>
+                <div class="flex justify-center items-center gap-2">
+                    <i class="fa-solid fa-location-dot text-[#43B97F]"></i>
+                    <p class="font-semibold">Location</p>
+                </div>
+                <div>
+                    <select>
+                        <option class="text-[#00000096]">Japan</option>
+                    </select>
+                </div>
+            </div>
+
+            <div>
+                <div class="flex justify-center items-center gap-2"">
+                    <i class="fa-solid fa-user text-[#43B97F]"></i>
+                    <p class="font-semibold">People</p>
+                </div>
+                <div>
+                    <select>
+                        <option class="text-[#00000096]">02 Person</option>
+                    </select>
+                </div>
+            </div>
+
+            <div>
+                <div class="flex justify-center items-center gap-2">
+                    <i class="fa-solid fa-calendar-days text-[#43B97F]"></i>
+                    <p class="font-semibold">Check In</p>
+                </div>
+                <div>
+                    <select>
+                        <option class="text-[#00000096]">02/05/2024</option>
+                    </select>
+                </div>
+            </div>
+
+            <div>
+                <div class="flex justify-center items-center gap-2">
+                    <i class="fa-solid fa-calendar-days text-[#43B97F]"></i>
+                    <p class="font-semibold">Check Out</p>
+                </div>
+                <div>
+                    <select>
+                        <option class="text-[#00000096]">20/05/2024</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="flex justify-center mx-auto col-span-2 lg:col-span-1">
+                <button
+                class="btn bg-[#43B97F] border-[#43B97F] text-white h-8 min-h-0 rounded-sm font-[200]"
+              >
+                Find Trip
+              </button>
+            </div>
+
+        </div>
+      </div>
     </header>
     <main></main>
     <footer></footer>
