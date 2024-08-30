@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tourism website</title>
+    <!-- tailwind and daily UI cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font awesome cdn -->
+    <script
+      src="https://kit.fontawesome.com/daf73e6806.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- google font cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- config cdn -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            },
+            fontFamily:{
+                jost: ['Jost', 'sans-serif'],
+            },
+            backgroundImage:{
+                headerBg:"url('./Assets/Rectangle 1.png')"
+            }
+          }
+        }
+      </script>
+  </head>
+  <body class="font-jost">
+    <header class="bg-headerBg h-[500px] bg-cover bg-no-repeat bg-center bg-gradient-to-b from-[#0000009d] to-[#0000007d]">
+        <div class="w-full h-full bg-gradient-to-b from-[#0000009d] to-[#0000007d]">
+        <!-- navbar -->
+
+        <nav>
+            <div>
+                <img src="./Assets/Frame 1171276204.png" alt="">
+            </div>
+
+            <div>
+                <ul>
+                    <li><a>Home</a></li>
+                    <li><a>Destination</a></li>
+                    <li><a>Experiences</a></li>
+                    <li><a>Hotels</a></li>
+                    <li><a>About Us</a></li>
+                    <li><a>Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <button></button>
+                <button></button>
+            </div>
+
+        </nav>
+
+        </div>
+
+    </header>
+    <main></main>
+    <footer></footer>
+  </body>
+</html>
